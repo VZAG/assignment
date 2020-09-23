@@ -1,0 +1,24 @@
+-- INSERT EMPLOYEES
+insert into employee (employee_id, first_name, last_name, email, designation, created_date, updated_date) values (1, 'John', 'Warton', 'warton@gmail.com', 'SOFTWARE_ENGINEER_1', '2018-01-01 15:50:36.0680763', '2018-01-01');
+insert into employee (employee_id, first_name, last_name, email, designation, created_date, updated_date) values (2, 'Mike', 'Lanister', 'lanister@gmail.com', 'SOFTWARE_ENGINEER_2', '2017-02-02 15:50:36.0680763', '2018-01-01');
+insert into employee (employee_id, first_name, last_name, email, designation, created_date, updated_date) values (3, 'Steve', 'Reeves', 'Reeves@gmail.com', 'SOFTWARE_ENGINEER_3', '2016-03-03 15:50:36.0680763', '2018-01-01');
+insert into employee (employee_id, first_name, last_name, email, designation, created_date, updated_date) values (4, 'Ronald', 'Connor', 'connor@gmail.com', 'SOFTWARE_MANAGER', '2015-04-04 15:50:36.0680763', '2018-01-01');
+insert into employee (employee_id, first_name, last_name, email, designation, created_date, updated_date) values (5, 'Jim', 'Salvator', 'Sal@gmail.com', 'SOFTWARE_ENGINEER_1', '2020-01-01 15:50:36.0680763', '2018-01-01');
+insert into employee (employee_id, first_name, last_name, email, designation, created_date, updated_date) values (6, 'Peter', 'Henley', 'henley@gmail.com', 'SOFTWARE_ENGINEER_2', '2014-06-06 15:50:36.0680763', '2018-01-01');
+insert into employee (employee_id, first_name, last_name, email, designation, created_date, updated_date) values (7, 'Richard', 'Carson', 'carson@gmail.com', 'SOFTWARE_ENGINEER_3', '2012-07-07 15:50:36.0680763', '2018-01-01');
+insert into employee (employee_id, first_name, last_name, email, designation, created_date, updated_date) values (8, 'Honor', 'Miles', 'miles@gmail.com', 'SOFTWARE_MANAGER', '2018-01-01 15:50:36.0680763', '2018-01-01');
+insert into employee (employee_id, first_name, last_name, email, designation, created_date, updated_date) values (9, 'Tony', 'Roggers', 'roggers@gmail.com', 'SOFTWARE_ENGINEER_3', '2019-01-09 15:50:36.0680763', '2018-01-01');
+
+-- INSERT PROJECTS
+insert into project (project_id, name, cost, type, start_date, end_date, created_date, updated_date) values (1000, 'Production Deployment', 45.23, 'WEB', '2015-01-01', '2016-01-01', '2018-01-01', '2020-01-01');
+insert into project (project_id, name, cost, type, start_date, end_date, created_date, updated_date) values (1001, 'Employee Budget Report', 95.55, 'MOBILE', '2014-05-09', '2018-01-01', '2016-04-01', '2020-07-01');
+insert into project (project_id, name, cost, type, start_date, end_date, created_date, updated_date) values (1002, 'New Pipeline CI/CD',65.02, 'WEB', '2010-01-10', '2013-06-01', '200-01-01', '2009-01-01');
+insert into project (project_id, name, cost, type, start_date, end_date, created_date, updated_date) values (1003, 'Spring Security',13.87, 'MOBILE', '2019-08-01', '2016-03-01', '2018-02-01', '2020-05-01');
+
+-- INSERT PROJECT_EMPLOYEE
+insert into project_employee ( employee_id, project_id) values (1,1000);
+insert into project_employee ( employee_id, project_id) values (1,1001);
+insert into project_employee ( employee_id, project_id) values (1,1002);
+insert into project_employee ( employee_id, project_id) values (3,1000);
+insert into project_employee ( employee_id, project_id) values (6,1002);
+insert into project_employee ( employee_id, project_id) values (6,1003);
